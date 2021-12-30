@@ -347,6 +347,9 @@ img.imgStyle {
   .lolmbr-overlay , .overlay2, .overlay3, .overlay4, .overlay5, .overlay6b{
       opacity: 1 
  }
+.blackFont{
+  color: black !important;
+ }
 }
 @media (max-width:767.98px) {
   .btn-grad {
@@ -365,6 +368,9 @@ img.imgStyle {
  }
   .lolmbr-overlay , .overlay2, .overlay3, .overlay4, .overlay5, .overlay6b{
       opacity: 1 
+ }
+ .blackFont{
+  color: black !important;
  }
   img.footerLogo {
       width: 40%;
@@ -385,6 +391,9 @@ img.imgStyle {
  }
   .lolmbr-overlay , .overlay2, .overlay3, .overlay4, .overlay5, .overlay6b{
       opacity: 1 
+ }
+ .blackFont{
+  color: black !important;
  }
   img.footerLogo {
       width: 40%;
