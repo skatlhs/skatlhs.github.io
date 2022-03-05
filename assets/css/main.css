@@ -144,6 +144,46 @@ img.expandimage {
   color: #fff;
   font-weight: 400 
 }
+.img-icon {
+  border-radius: 8px;
+  width: 50px;
+  display: block;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.fixed-download {
+  display: block;
+  position: fixed;
+  width: 40px;
+  color: white !important;
+  top: 20px;
+  right: 30px;
+  float: right;
+  height: 200px;
+  z-index: 999;
+  font-size: 14pt;
+  text-decoration: none;
+}
+
+.fixed-download a {
+  color: rgba(0, 0, 0, 0.197);
+  transition: all .3s ease;
+  text-decoration: none;
+}
+
+.fixed-download a:hover {
+  color: rgb(255, 255, 255);
+  transition: all .3s ease;
+  text-decoration: none;
+}
+
 .img-parallax {
   width: 100vmax;
   z-index: -1;
@@ -315,8 +355,20 @@ img.imgStyle {
   height: auto;
   width: 600px !important;
 }
+
+.sticky-fix {
+  position: sticky;
+  top: 100px;
+}
+
 /* ----------------------------------------------Media ueries----------------------------------------------*/
 @media (max-width:575.98px) {
+  .img-icon {
+    position: relative;
+    top: 100px;
+    display: none;
+  }
+
   .btn-grad {
       display: block;
       margin-bottom: 10px;
@@ -350,6 +402,23 @@ img.imgStyle {
 .blackFont{
   color: black !important;
  }
+
+.hideOnDesks {
+  display: none;
+  height:0 !important;
+}
+
+ .intro-para {
+position: relative;
+   /* top: 20px; */
+   display: block;
+   /* margin-bottom: 60px; */
+ }
+
+.buttons {
+  float: none !important;
+}
+
 }
 @media (max-width:767.98px) {
   .btn-grad {
@@ -360,6 +429,18 @@ img.imgStyle {
   .img-parallax {
       height: 100vh;
  }
+
+ .intro-para {
+  position: relative;
+     margin-top: 20px;
+     display: block;
+     margin-bottom: 60px;
+   }
+  
+  .buttons {
+    float: none !important;
+  }
+
   .gradient-line, .gradient-line2 {
       display: none 
  }
@@ -386,6 +467,17 @@ img.imgStyle {
   .img-parallax {
       height: 100vh;
  }
+
+ .intro-para {
+  position: relative;
+     display: block;
+     margin-bottom: 60px;
+   }
+  
+  .buttons {
+    float: none !important;
+  }
+
   .gradient-line, .gradient-line2 {
       display: none 
  }
@@ -399,4 +491,6 @@ img.imgStyle {
       width: 40%;
       padding-bottom: 20px;
  }
+
+
 }
