@@ -37,7 +37,8 @@
   top: 5px 
 }
 .buttons {
-  margin-top: 20px 
+  margin-top: 20px;
+  margin-bottom: 90px;
 }
 .info-sec {
   height: 90vh;
@@ -112,8 +113,10 @@ img.expandimage {
   color: #fff 
 }
 .arrowbuttons {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.3) 51%);
-  color: #fff 
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0.1) 51%);
+  color: #fff ;
+  border: 2px solid transparent;
+  box-shadow: none;
 }
 .divButton {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.89) 0, rgb(255, 255, 255) 51%);
@@ -174,6 +177,7 @@ img.expandimage {
 
 .fixed-download a {
   color: rgba(0, 0, 0, 0.197);
+  color: white;
   transition: all .3s ease;
   text-decoration: none;
 }
@@ -492,5 +496,13 @@ position: relative;
       padding-bottom: 20px;
  }
 
+}
 
+.space-divider {
+  height: 1px;
+  display: block;
+  width: 100px;
+  background-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
