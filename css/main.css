@@ -1,0 +1,167 @@
+         .btn-grad {
+           background-image: linear-gradient(to right, #f55b9a 0, #f9b16e 51%, #dd5e89 100%);
+           margin: 10px;
+           padding: 25px 45px;
+           text-align: center;
+           text-transform: uppercase;
+           transition: 0.5s;
+           background-size: 200% auto;
+           color: white;
+           box-shadow: 0 0 20px #eee;
+           border-radius: 30px;
+           display: inline-block;
+         }
+
+         .btn-grad:hover {
+           background-position: right center !important;
+           /* change the direction of the change here */
+           color: #fff;
+           text-decoration: none;
+         }
+
+         .btn-grad2 {
+           background-image: linear-gradient(to right, #03cfe3 0, #aa36fc 51%, #e96ef9 100%)
+         }
+
+         .store-buttons {
+           background: black;
+           padding-left: 10px;
+           padding-right: 10px;
+           color: white;
+           padding: 5px 30px;
+           border-radius: 10px;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+           transition: 0.5s;
+         }
+
+         .store-buttons:hover {
+           background: #ffffff;
+           color: black;
+           transition: 0.5s;
+         }
+
+         .button-ios {
+           color: black;
+           background-color: white;
+         }
+
+         .button-ios:hover {
+           background-color: black;
+           color: white;
+         }
+
+         .download-right-box {
+           position: fixed;
+           padding: 10px 5px;
+           top: 10vh;
+           right: 0;
+           background-color: white;
+           z-index: 999;
+           border-top-left-radius: 10px;
+           border-bottom-left-radius: 10px;
+           text-align: center;
+           box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+         }
+
+
+         
+
+         .download-right-box a {
+           color: black;
+         }
+
+         a.def-link:hover {
+           text-decoration: underline !important;
+         }
+
+         video {
+           margin-top: 20px;
+           border-radius: 20px;
+           box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+           transition: 0.5s;
+         }
+
+         .pos {
+           width: 143px;
+           height: 143px;
+           top: 35%;
+           left: 0%;
+           animation-duration: 12s;
+           border-radius: 25%;
+         }
+
+         .pos2 {
+           right: 10%;
+           top: 70% !important;
+           border-radius: 25%;
+
+         }
+
+         .pos3 {
+           left: 60%;
+           border-radius: 25%;
+
+           /* bottom: 14% !important; */
+           /* animation-duration: 0.1s; */
+         }
+
+         .pos4 {
+           left: 78%;
+           border-radius: 25%;
+
+         }
+
+         section {
+           margin-top: 33px;
+           display: block;
+         }
+
+         .pos5 {
+           left: 50%;
+           top: 40%;
+         }
+
+         .accordion_two_section {
+          background: #f7f7f7;
+      }
+      
+      .ptb-100 {
+          padding-top: 100px;
+          padding-bottom: 100px;
+      }
+      
+    .faqlinks {
+      position: relative;
+      /* padding-top: 20px; */
+        }
+
+  .moctop {
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .tooltipee {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltipee .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltipee:hover .tooltiptext {
+    visibility: visible;
+  }

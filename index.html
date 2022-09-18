@@ -1,421 +1,689 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/video.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/scroll.css">
-  <!--  <link rel="stylesheet" href="assets/css/bb.css">-->
-  <title>barkly - Pet Finder.</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/f/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/f/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/ffavicon-16x16.png">
-  <link rel="manifest" href="assets/images/f/site.webmanifest">
-  <link rel="mask-icon" href="assets/images/f/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!--  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;500;700&display=swap" rel="stylesheet">-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>barkly - Pet Finder.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="http://getbarkly.com/assets/images/f/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://getbarkly.com/assets/images/f/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://getbarkly.com//assets/images/ffavicon-16x16.png">    <style data-href="https://dimon-gatsby.vercel.app/styles.111b228bd9d280cb9910.css" id="gatsby-global-css">
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://dimon-gatsby.vercel.app/styles.111b228bd9d280cb9910.css" rel="stylesheet" type="text/css" />
+    <link data-react-helmet="true"
+        href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <meta data-react-helmet="true" charset="UTF-8">
+    <meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="ie=edge">
+    <link as="script" rel="preload" href="https://dimon-gatsby.vercel.app//webpack-runtime-33acd6b0dc8fba99c27d.js">
+    <link as="script" rel="preload" href="https://dimon-gatsby.vercel.app//framework-11348fb0fa7c3ad87864.js">
+    <link as="script" rel="preload" href="https://dimon-gatsby.vercel.app//app-90efa99b8a5d13c88f6b.js">
+    <link as="script" rel="preload" href="https://dimon-gatsby.vercel.app//styles-e9d24b1846c7d6eb9685.js">
+    <link as="script" rel="preload" href="https://dimon-gatsby.vercel.app//a4c92b5b-951728d3b3890226387e.js">
+    <link as="script" rel="preload" href="https://dimon-gatsby.vercel.app//commons-90175aba5889b7702b5a.js">
+    <link as="script" rel="preload"
+        href="/https://dimon-gatsby.vercel.app/af4000f3fe1cfbe71df4b32de1ebbaf80ef1d2a0-47ef5a95bd756194dc4f.js">
+    <link as="script" rel="preload"
+        href="https://dimon-gatsby.vercel.app//component---src-pages-index-js-9898a8561c53a92d864b.js">
+    <link as="fetch" rel="preload" href="https://dimon-gatsby.vercel.app//page-data/index/page-data.json"
+        crossorigin="anonymous">
+    <link as="fetch" rel="preload" href="https://dimon-gatsby.vercel.app//page-data/app-data.json"
+        crossorigin="anonymous">
+    <link rel="prefetch" href="https://dimon-gatsby.vercel.app//page-data/news-details/page-data.json"
+        crossorigin="anonymous" as="fetch">
+    <link rel="prefetch" href="https://dimon-gatsby.vercel.app//page-data/news/page-data.json" crossorigin="anonymous"
+        as="fetch">
+    <link rel="prefetch" href="https://dimon-gatsby.vercel.app//component---src-pages-news-js-d7b655e22e633d34e350.js">
+    <link rel="prefetch"
+        href="https://dimon-gatsby.vercel.app//component---src-pages-news-details-js-e7f61eb8d6d838cfa06b.js">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 <style>
-  html,
-  body {
-    /*    font-family: 'Josefin Sans', sans-serif;*/
-    font-family: 'Be Vietnam', sans-serif;
-    font-weight: bold;
-  }
 </style>
 
 <body>
+    <div class="download-right-box navv">
+        <center>
+            <img src="/assets/images/barkly-icon.webp"
+                style="  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+               margin-bottom: 10px; width: 50px; height: 50px; border: 1px solid rgb(211, 211, 211); border-radius: 10px;;" />
+        </center>
+        <a href="https://apps.apple.com/ca/app/barkly/id1593754307" target="_blank">
+            <i class="fab fa-apple"></i>
+        </a>
+        <br><br>
+        <a href="https://play.google.com/store/apps/details?id=com.getbarkly" target="_blank">
+            <i class="fab fa-google-play"></i>
+        </a>
+    </div>
+    <div id="___gatsby">
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <div>
+                <div class="page-wrapper">
+                    <header class="site-header site-header__header-one" style="padding-top: 20px;">
+                        <nav
+                            class="navbar navv navbar-expand-lg navbar-light header-navigation stricky sticky-top navv">
+                            <div class="container clearfix">
+                                <div class="logo-box clearfix"><a class="navbar-brand" href="/"><img
+                                            src="/assets/images/barkly-logo.png" style="visibility: hidden;"
+                                            class="main-logo" width="119" alt="alter text"></a><button
+                                        class="menu-toggler"></button></div>
+                                <div class="right-side-box">
+                                    Download now for
+                                    <a class="def-link" href="https://apps.apple.com/ca/app/barkly/id1593754307"
+                                        style="color:  #f55b9a;" target="_blank">iOS</a> or
+                                    <a class="def-link"
+                                        href="https://play.google.com/store/apps/details?id=com.getbarkly"
+                                        style="color:  #aa36fc ;" target="_blank">Android</a>!
+                                </div>
+                        </nav>
+                    </header>
+                    <section class="banner-one" id="banner">
+                        <span class="banner-one__shape-1"></span>
+                        <span class="banner-one__shape-2"></span><span class="banner-one__shape-3"></span>
+                        <span class="banner-one__shape-4"></span>
+                        <div class="container">
+                            <div class="banner-one__moc"><img src="assets/images/barkly-phone-full.png"
+                                    style="width:400px;" alt="alter text">
+                            </div>
+                            <div class="row moctop">
+                                <div class="col-xl-6 col-lg-8">
+                                    <img src="/assets/images/barkly-logo.png" style="width: 40%;" />
+                                    <div class="banner-one__content">
+                                        <div
+                                            style="font-size: 18pt; position:relative; padding-top: 40px; color: black !important; opacity: 1 !important;">
+                                            Buy &nbsp; Sell &nbsp; Adopt &nbsp; Foster &nbsp; Find a Pet!</div>
+                                        <h3 class="banner-one__title" style="font-size:16pt !important;">
+                                        </h3>
+                                        <p class="banner-one__text" style="opacity: 0.5 ;">
+                                            With barkly, you can find pets, toys, and accessories located in your state
+                                            or province.
+                                        </p>
+                                        <a href="https://apps.apple.com/ca/app/barkly/id1593754307" target="_blank">
+                                            <button class="btn btn-outline-dark btn-icon-text store-buttons button-ios"
+                                                style="text-align: center;">
+                                                <center>
+                                                    <span class="d-inline-block text-left">
+                                                        <small class="font-weight-light d-block">Available on
+                                                            the</small>
+                                                </center>
+                                                <center><i class="fab fa-apple"></i> App Store</center>
+                                                </span>
+                                            </button>
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.getbarkly"
+                                            target="_blank">&nbsp;&nbsp;
+                                            <button class="btn btn-outline-dark btn-icon-text store-buttons"
+                                                style="text-align: center;">
+                                                <span class="d-inline-block text-left">
+                                                    <center><small class="font-weight-light d-block">Get it on
+                                                            the</small></center>
+                                                    <center> <i class="fab fa-google-play"></i> Play Store</center>
+                                                </span>
+                                            </button>
+                                        </a>
+                                        <br><br>
+                                        <video onloadeddata="this.play();" width="100%" class="videoplayer"
+                                            poster="poster.png" playsinline loop muted>
+                                            <source src="https://getbarkly.com/assets/videos/vid.mp4" type="video/mp4">
+                                            Your browser does not support the video tag or the file format of this
+                                            video.
+                                        </video>
+                                        <!-- <h3 class="banner-one__title" style="visibility: hidden;">Next gen pet finder.</h3> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="cta-one"><img src="/assets/images/right-shape.png" class="cta-one__bg"
+                            style="opacity: 0.05;" alt="alter text">
+                        <span class="banner-one__shape-2 pos4"></span>
+                        <span class="banner-one__shape-3 pos3"></span>
+                        <span class="banner-one__shape-1 pos"></span>
+                        <span class="banner-one__shape-4 pos2"></span>
+                        <div class="container">
+                            <div class="row justify-content-lg-end">
+                                <div class="col-lg-6">
+                                    <center>
+                                        <img src="/assets/images/phone-graphics.png" style="width: 550px;"
+                                            class="cta-one__moc" alt="alter text">
+                                    </center>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="cta-one__content">
+                                        <!-- <i class="cta-one__icon dimon-icon-data1"></i> -->
+                                        <div class="block-title text-left">
+                                            <h2 class="block-title__title">What's <img
+                                                    src="https://getbarkly.com/assets/images/barkly-logo.png"
+                                                    style="width:170px; padding-left: 10px;" title="Barkly photo"
+                                                    alt="Barkly" /> ?
+                                                <!-- <span>Barkly</span>? -->
+                                            </h2>
+                                        </div>
+                                        <div class="cta-two__text">
+                                            <p>
+                                                Barkly is a user to user app that helps people find their next pets. We
+                                                show you listings of all types of pets, mostly dogs, in your area (state
+                                                or province). We have listings from individual sellers, breeders, or
+                                                shelters nearby. You can also find cats, reptiles, fish, small furry
+                                                pets, birds, and toys, accessories, and equipment, for your pets as
+                                                well.
+                                                <br><br>
+                                                It also works both ways. Want to list something? It takes less than 2
+                                                minutes to post something!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="cta-one">
+                        <img src="/assets/images/left-shape.png" alt="alter text" class="video-one__bg">
+                        <span class="banner-one__shape-2"></span>
+                        <span class="banner-one__shape-3 pos6"></span>
+                        <!-- <span class="banner-one__shape-1 pos7"></span> -->
+                        <span class="banner-one__shape-4 pos5"></span>
+                        <div class="container">
 
-  <div class="fixed-download">
-    <a href="https://apps.apple.com/ca/app/barkly/id1593754307" target="_blank"> <i class="fab fa-apple"></i> <span
-        class="icon-position">
-
-      </span>
-    </a>
-
-    <a href="https://play.google.com/store/apps/details?id=com.getbarkly" target="_blank"> <span class="icon-position2"
-        style="font-size:12pt; top: 0px;">
-        <i class="fab fa-google-play"></i>
-      </span>
-    </a>
-
-  </div>
-  <header class="box-shadowed">
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="true" muted="muted" loop="loop">
-      <source src="assets/videos/vid.mp4" type="video/mp4">
-    </video>
-    <div class="container h-100">
-      <p class="intro-para"
-      style="padding-top: 20px; padding-bottom: 12px; text-align:center; color:white; font-weight: 500; font-size: 12pt; display: block;">
-      Buy &middot; Sell &middot; Adopt &middot; Foster &middot; Find a Pet!
-      </p>
-      <div class="d-flex h-100 align-items-end">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="row align-items-center">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 align-items-center">
-              <center>
-              <h1 class="display-3">
-                <!-- <img class="img-icon" src="assets/images/app-icon.png" /> -->
-                <img class="image-logo" style="width:30%; display: block; position: relative; top: 40px;"
-                  src="assets/images/logo-white.png" />
-              </h1>
-
-              <!-- <p class="lead mb-0" style="padding-top: 12px;font-weight: bold;">Use barkly to find your next pet,<br> or to list one.</p> -->
-              <!-- <p class="lead mb-0" style="position:relative;font-weight: light; font-size: 24pt;  display: block;">
-                Buy &middot; Sell &middot; Adopt &middot; Foster &middot; Find
-                 </p> -->
-
-              <div class="hideOnDesks"></div>
-
-              <div class="space-divider">
-
-              </div>
-          
-                <!-- Barkly is an app that helps people find their next pets.
-                We show you listings of all types of pets, mostly dogs,
-                in your area (state or province). We have listings from individual sellers, breeders,
-                or shelters nearby. You can also find cats, reptiles, fish, small furry pets, birds, and toys,
-                accessories, and equipment, for your pets as well.</p> -->
+                            <img src="/assets/images/phone-category.png" style="width:350px;" class="cta-two__moc"
+                                alt="alter text">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="cta-two__content">
+                                        <div class="block-title text-left">
+                                            <h2 class="block-title__title"><span>Finding</span> or <span>Listing</span>
+                                                <br>a pet on
+                                                <img src="https://getbarkly.com/assets/images/barkly-logo.png"
+                                                    style="width:170px; padding-left: 10px;" title="Barkly photo"
+                                                    alt="Barkly" />
+                                            </h2>
+                                        </div>
+                                        <div class="cta-two__text">
+                                            <p>With barkly, you can find pets, toys, and accessories located in your
+                                                state/province.
+                                                <br><br>
+                                                You can find pets from individual sellers, breeders, or shelters nearby.
+                                                We provide results based on your state or province.
+                                                <br><br>
+                                                We have over 60 different dog breeds categorized, as well as categories
+                                                for fish, cats, reptiles, birds, and small furry pets.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
 
+                    <section class="cta-one"><img src="/assets/images/right-shape.png" class="cta-one__bg"
+                            style="opacity: 0.05;" alt="alter text">
+                        <span class="banner-one__shape-2 pos4"></span>
+                        <span class="banner-one__shape-3 pos3"></span>
+                        <span class="banner-one__shape-1 pos"></span>
+                        <span class="banner-one__shape-4 pos2"></span>
+                        <div class="container">
+                            <div class="row justify-content-lg-end">
+                                <div class="col-lg-6">
+                                    <center>
+                                        <img src="/assets/images/phone-chat.png" style="width: 400px;"
+                                            class="cta-one__moc moc_pushed" alt="alter text">
+                                    </center>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="cta-one__content">
+                                        <!-- <i class="cta-one__icon dimon-icon-data1"></i> -->
+                                        <div class="block-title text-left">
+                                            <h2 class="block-title__title"> <span>Know Who You're Chatting With</span>
+                                            </h2>
+                                        </div>
+                                        <div class="cta-two__text">
+                                            <p>
+                                                All users on the app have an account type.
+                                                <br><br>
+                                                The account types we have are: individual sellers, breeders, pet stores,
+                                                and shelters.
+                                                <br><br>
 
-              <div class="buttons">
-                <a class="btn-grad arrowbuttons" href="https://apps.apple.com/ca/app/barkly/id1593754307" target="_blank">
-                  <span class="_icon-position">
-                    <i class="fab fa-apple"></i>
-                  </span>
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.getbarkly" target="_blank"
-                  class="btn-grad arrowbuttons"><span class="_icon-position2">
-                    <i class="fab fa-google-play"></i>
-                  </span>
-                </a>
-                <!-- <a class="btn-grad btn-grad3" href="#two">Learn More</a> -->
-              </div>
-              </center>
+                                                We want you to know where your future pets are coming from, and that
+                                                they're coming from somewhere safe and healthy.
+                                                <br><br>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="faq-one">
+
+                        <img src="/assets/images/left-shape.png" alt="alter text" class="video-one__bg">
+
+                        <span class="banner-one__shape-2"></span>
+                        <span class="banner-one__shape-3 pos6"></span>
+                        <span class="banner-one__shape-1 pos7"></span>
+                        <span class="banner-one__shape-4 "></span>
+                        <div class="container">
+                            <div class="block-title text-center">
+                                <h2 class="block-title__title">Frequently Asked Questions</h2>
+                            </div>
+
+
+                            <div class="panel-group" id="accordionTwoLeft">
+
+                            </div>
+
+
+
+                         
+
+                            <div class="accrodion-grp faq-accrodion">
+                                <div class="service-one__single">
+                                    <div class="service-one__inner,">
+                                    <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#q1"
+                                        aria-expanded="false" class="collapsed service-one__link">
+                                        <div class="accrodion faqlinks" style="box-shadow: none !important; border: 0;">
+                                            <div class="accrodion-inner">
+                                                <div class="accrodion-title" role="button" tabindex="0">
+                                                    <h4>
+                                                        What's Barkly?
+
+                                                    </h4>
+                                                </div>
+
+                                                <div id="q1" class="panel-collapse collapse" aria-expanded="false"
+                                                    role="tablist" style="height: 0px;">
+                                                    <div class="accrodion-content">
+                                                        <div class="inner">
+                                                            <p>
+
+                                                                Barkly is a user to user app that helps people find
+                                                                their next pets.
+                                                                We show you listings of all types of pets, mostly dogs,
+                                                                in your area (state or province).
+                                                                <br><br>
+                                                                We have listings from individual sellers, breeders, or
+                                                                shelters nearby.
+                                                                You can also find cats, reptiles, fish, and toys,
+                                                                accessories, and equipment, for your pets as well.
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+</div></a>
+                                        </div>
+                                </div>
+                                </a>
+
+
+                             
+
+
+
+
+
+                                <div class="service-one__single srv2">
+
+
+
+                                    <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#q2"
+                                        aria-expanded="false" class="collapsed">
+                                        <div class="accrodion faqlinks shadowbox">
+                                            <div class="accrodion-inner">
+                                                <div class="accrodion-title col-sm-12" role="button" tabindex="0">
+                                                    <h4>
+                                                        What Can I List?
+
+                                                    </h4>
+                                                </div>
+                                                <div id="q2" class="panel-collapse collapse" aria-expanded="false"
+                                                    role="tablist" style="height: 0px;">
+                                                    <div class="accrodion-content active animated">
+                                                        <div class="inner">
+                                                            <p>
+
+                                                                If you want to list something, we have a bunch of
+                                                                categories for you.
+                                                                We have a little over 50 categories for specific dog
+                                                                breeds, as well as categories for
+                                                                cats, reptiles, fish, other dog breeds we don\'t have
+                                                                listed, as well as toys, accessories & equipment for
+                                                                your pets.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="service-one__single">
+
+
+                                    <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#q3"
+                                        aria-expanded="false" class="collapsed">
+                                        <div class="accrodion faq2 faqlinks shadowbox">
+                                            <div class="accrodion-inner">
+                                                <div class="accrodion-title" role="button" tabindex="0">
+                                                    <h4>
+                                                        How Do I List Something?
+
+                                                    </h4>
+                                                </div>
+                                                <div id="q3" class="panel-collapse collapse" aria-expanded="false"
+                                                    role="tablist" style="height: 0px;">
+                                                    <div class="accrodion-content active animated">
+                                                        <div class="inner">
+                                                            <p>
+
+                                                                While you are using the app, you have 4 main navigation
+                                                                tabs on the bottom of your screen.
+                                                                They are: Location, Categories, Other, and Account. Head
+                                                                over to the account tab, and click on
+                                                                manage listings. You will then be brought to a page
+                                                                where you can access everything you have posted.
+                                                                To create a new listing, tap the blue button with a plus
+                                                                (+) icon.<br><br>
+                                                                If you want to edit a listing, simply tap the one you
+                                                                want to edit!
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="service-one__single">
+
+                                    <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#q4"
+                                        aria-expanded="false" class="collapsed">
+                                        <div class="accrodion faq2 faqlinks shadowbox">
+                                            <div class="accrodion-inner">
+                                                <div class="accrodion-title" role="button" tabindex="0">
+                                                    <h4>
+                                                        How Can I Contact Someone?
+                                                    </h4>
+                                                </div>
+                                                <div id="q4" class="panel-collapse collapse" aria-expanded="false"
+                                                    role="tablist" style="height: 0px;">
+                                                    <div class="accrodion-content active animated">
+                                                        <div class="inner">
+                                                            <p>
+                                                                Interested in making a purchase? Each listing on barkly
+                                                                has an individual post page. If you
+                                                                see something you like while scrolling, tap the listing
+                                                                to view more details on the item. From that page
+                                                                you can contact the seller and start a conversation with
+                                                                them. You can discuss more details privately with the
+                                                                seller.
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="service-one__single">
+
+                                    <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#q5"
+                                        aria-expanded="false" class="collapsed">
+                                        <div class="accrodion faq2 faqlinks shadowbox">
+                                            <div class="accrodion-inner">
+                                                <div class="accrodion-title" role="button" tabindex="0">
+                                                    <h4>
+                                                        Not Ready To Buy
+
+                                                    </h4>
+                                                </div>
+                                                <div id="q5" class="panel-collapse collapse" aria-expanded="false"
+                                                    role="tablist" style="height: 0px;">
+                                                    <div class="accrodion-content active animated">
+                                                        <div class="inner">
+                                                            <p>
+
+                                                                If you see something you like, you can save it by
+                                                                clicking the heart icon on the post page.
+                                                                The heart icon is located in the top right corner.
+                                                                <br><br>
+                                                                Click on the Account tab, then click 'Saved Postings' to
+                                                                view everything you have saved.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="service-one__single">
+
+                                    <a data-toggle="collapse" data-parent="#accordionTwoLeft" href="#collapseTwoLeftone"
+                                        aria-expanded="false" class="collapsed">
+                                        <div class="accrodion faq2 faqlinks shadowbox">
+                                            <div class="accrodion-inner">
+                                                <div class="accrodion-title" role="button" tabindex="0">
+                                                    <h4>
+                                                        How Are Posts Filtered?
+
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwoLeftone" class="panel-collapse collapse"
+                                                    aria-expanded="false" role="tablist" style="height: 0px;">
+                                                    <div class="accrodion-content active animated">
+                                                        <div class="inner">
+                                                            <p>
+
+                                                                We show you listings based on your state or province,
+                                                                and by default we show the newest ones first. <br><br>
+                                                                If you select an individual category from the
+                                                                'Categories' tab
+                                                                on the main navigation page, you can sort by price:
+                                                                highest and lowest,
+                                                                or reset it back to default (newest).
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+
+                                </div>
+
+</div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+                    <div>
+                        <footer class="site-footer">
+                            <div class="site-footer__upper">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <div class="footer-widget footer-widget__about"><img
+                                                    src="/assets/images/barkly-logo.png" width="119" alt=""
+                                                    class="footer-widget__logo">
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 d-flex justify-content-between footer-widget__links-wrap">
+                                            <div class="footer-widget">
+                                                <h3 class="footer-widget__title">Links</h3>
+                                                <ul class="footer-widget__links list-unstyled">
+                                                    <li><a href="mailto: support@getbarkly.com">Contact</a></li>
+                                                    <li><a href="https://www.privacypolicies.com/live/adef7c72-77a3-4d89-beb1-890e4200a549" target="_blank">Privacy Policy</a></li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="footer-widget" style="visibility: hidden;">
+                                                <h3 class="footer-widget__title">Services</h3>
+                                                <ul class="footer-widget__links list-unstyled">
+                                                    <li><a href="#none">Speed Optimization </a></li>
+                                                    <li><a href="#none">Marketing Analysis </a></li>
+                                                    <li><a href="#none">SEO and Backlinks </a></li>
+                                                    <li><a href="#none">Content Marketing</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-widget" style="visibility: hidden;">
+                                                <h3 class="footer-widget__title">Links</h3>
+                                                <ul class="footer-widget__links list-unstyled">
+                                                    <li><a href="mailto: support@getbarkly.com">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="footer-widget">
+                                                <div class="site-footer__social">
+                                                    
+                                                    
+                                                    <a 
+                                                        aria-label="social icon" aria-hidden="true" style="font-size:20pt;">
+                                                        🐶
+                                                    
+                                                    </a>
+
+                                                        <a
+                                                        aria-label="social icon" aria-hidden="true" style="font-size:20pt;">
+                                               
+                                                        
+                                                                        🐱
+                                                        </a>
+
+                                                            
+                                                            <a
+                                                        aria-label="social icon" aria-hidden="true" style="font-size:20pt;">
+                                                        🐤
+                                                    </a>
+                                                            
+                                                   
+                                                        
+                                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site-footer__bottom">
+                                <div class="container">
+                                    <div class="inner-container text-center">
+                                        <p class="site-footer__copy">©
+                                            <!-- -->
+                                            <script>
+                                                document.write(new Date().getFullYear());
+                                            </script>
+                                            <!-- -->
+                                            <!-- --> <a href="https://barklyqt.com" class="">BARKLYQT.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                        <div role="button" tabindex="0" class="scroll-to-target scroll-to-top"><i
+                                class="fa fa-angle-up"></i></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <div id="gatsby-announcer"
+            style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0"
+            aria-live="assertive" aria-atomic="true"></div>
     </div>
-  </header>
-  <section class="header13 cid-smuVjhwycX block mbr-fullscreen mbr-parallax-background"
-    style="background: url('assets/images/people1.jpeg')" id="header13-10">
-    <!--  <div class="lolmbr-overlay" style="background-color: rgba(116, 42, 185, 0.85)"></div>-->
+    <script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath = "/";/*]]>*/</script>
+    <script
+        id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping = { "polyfill": ["/polyfill-7fe1a63fac9cbf887ef9.js"], "app": ["/app-90efa99b8a5d13c88f6b.js"], "component---src-pages-index-2-js": ["/component---src-pages-index-2-js-e891cb7427d3bff23809.js"], "component---src-pages-index-js": ["/component---src-pages-index-js-9898a8561c53a92d864b.js"], "component---src-pages-news-details-js": ["/component---src-pages-news-details-js-e7f61eb8d6d838cfa06b.js"], "component---src-pages-news-js": ["/component---src-pages-news-js-d7b655e22e633d34e350.js"] };/*]]>*/</script>
+    <!-- <script src="https://getbarkly.com/assets/js/smooth.js"></script> -->
 
-    <div class="lolmbr-overlay"></div>
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="overlapper">
-            <center>
-              <h1 class="display-3" style="font-weight: 700;">What's Barkly <span style="margin-left:10px">?</span>
-              </h1>
-            </center>
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-                <p> Barkly is a user to user app that helps people find their next pets. We show you listings of all
-                  types of pets, mostly dogs, in your area (state or province). We have listings from individual
-                  sellers, breeders, or shelters nearby. You can also find cats, reptiles, fish, small furry pets,
-                  birds, and toys, accessories, and equipment, for your pets as well. <br>
-                  <br> It also works both ways. Want to list something? It takes less than 2 minutes to post something!
-                  <br>
-                  <br>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="header13 cid-smuVjhwycX block mbr-fullscreen mbr-parallax-background"
-    style="background: url('assets/images/dog-running.jpeg')" id="header13-10">
-    <!--  <div class="lolmbr-overlay" style="background-color: rgba(116, 42, 185, 0.85)"></div>-->
-    <div class="lolmbr-overlay overlay2"></div>
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="overlapper">
-            <div class="d-flex h-100 align-items-center">
-              <div class="row" style="padding: 0 auto; margin: 0 auto;">
-                <div class="col-md-6" style="background-color: transparent;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper overLapperLeft">
-                      <h1 class="display-3" style="font-weight: 700;">Finding Your Next Pet</h1>
-                      <p> With barkly, you can find pets, toys, and accessories located in your state/province. <br>
-                        <br> You can find pets from individual sellers, breeders, or shelters nearby. We provide results
-                        based on your state or province. <br>
-                        <br> We have over 60 different dog breeds categorized, as well as categories for fish, cats,
-                        reptiles, birds, and small furry pets. <br>
-                        <br>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6" style="background-color: transparent;visibility: hidden;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper">
-                      <h1 class="display-3" style="font-weight: 700;">Pet Info</h1>
-                      <p>Adding a new pet into your life can be difficult. We want to make sure you know what you're
-                        getting into. <br>
-                        <br> We make sure our sellers enter all the necessary info on what they're listing. <br>
-                        <br> We also made it easy to message our sellers! Just click the 'Contact Seller' button on
-                        their listing! <br>
-                        <br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-  <section class="header13 cid-smuVjhwycX block mbr-fullscreen mbr-parallax-background"
-    style="background: url('assets/images/cat.jpeg')" id="header13-10">
-    <!--  <div class="lolmbr-overlay" style="background-color: rgba(116, 42, 185, 0.85)"></div>-->
-    <div class="lolmbr-overlay overlay3"></div>
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="overlapper">
-            <div class="d-flex h-100 align-items-center">
-              <div class="row" style="padding: 0 auto; margin: 0 auto;">
-                <div class="col-md-6" style="background-color: transparent;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper">
-                      <h1 class="display-3" style="font-weight: 700;visibility: hidden;">Meet People Like Yourself</h1>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6" style="background-color: transparent;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper">
-                      <h1 class="display-3" style="font-weight: 700;">Info About the Pets</h1>
-                      <p>Adding a new pet into your life can be difficult. We want to make sure you know what you're
-                        getting into. <br>
-                        <br> We make sure our sellers enter all the necessary info on what they're listing. <br>
-                        <br> We also made it easy to message our sellers! Just click the 'Contact Seller' button on
-                        their listing! <br>
-                        <br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-  <section class="header13 cid-smuVjhwycX block mbr-fullscreen mbr-parallax-background"
-    style="background: url('assets/images/holding-dog.jpeg')" id="header13-10">
-    <!--  <div class="lolmbr-overlay" style="background-color: rgba(116, 42, 185, 0.85)"></div>-->
-    <div class="lolmbr-overlay overlay4"></div>
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="overlapper">
-            <div class="d-flex h-100 align-items-center">
-              <div class="row" style="padding: 0 auto; margin: 0 auto;">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                  <div style="padding-left: 20px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper blackFont">
-                      <h1 class="display-3" style="font-weight: 700;">Know Who You're Chatting With</h1>
-                      <p> All users on the app have an account type. <br>
-                        <br> The account types we have are: individual sellers, breeders, pet stores, and shelters. <br>
-                        <br> We want you to know where your future pets are coming from, and that they're coming from
-                        somewhere safe and healthy. <br>
-                        <br>Chat with them in our app, or send them an email!
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="header13 cid-smuVjhwycX block mbr-fullscreen mbr-parallax-background"
-    style="background: url('assets/images/cat-looking.jpeg')" id="header13-10">
-    <!--  <div class="lolmbr-overlay" style="background-color: rgba(116, 42, 185, 0.85)"></div>-->
-    <div class="lolmbr-overlay overlay5"></div>
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="overlapper">
-            <div class="d-flex h-100 align-items-center">
-              <div class="row" style="padding: 0 auto; margin: 0 auto;">
-                <div class="col-md-6" style="background-color: transparent;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper overLapperLeft blackFont">
-                      <h1 class="display-3" style="font-weight: 700;">Categorized Options</h1>
-                      <p> Our app has over 70 categories helping you find what you're looking for. <br>
-                        <br> Can't find what you need? No problem. We also provide a search page if you want to be more
-                        thorough, or for pets that fall under uncategorized sections. <br>
-                        <br> You can also search for users, facilities, and organizations.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6" style="background-color: transparent;visibility: hidden;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper">
-                      <h1 class="display-3" style="font-weight: 700;">Descriptive Information</h1>
-                      <p>Adding a new pet into your life can be difficult. We want to make sure you know what you're
-                        getting into. <br>
-                        <br> We make sure our sellers enter all the necessary info on what they're listing. <br>
-                        <br> We also made it easy to message our sellers! Just click the 'Contact Seller' button on
-                        their listing! <br>
-                        <br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-  <section class="header13 cid-smuVjhwycX block mbr-fullscreen mbr-parallax-background"
-    style="background: url('assets/images/rab.jpeg')" id="header13-10">
-    <!--  <div class="lolmbr-overlay" style="background-color: rgba(116, 42, 185, 0.85)"></div>-->
-    <div class="lolmbr-overlay overlay6"></div>
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="overlapper">
-            <div class="d-flex h-100 align-items-center">
-              <div class="row" style="padding: 0 auto; margin: 0 auto;">
-                <div class="col-md-6" style="background-color: transparent;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper">
-                      <h1 class="display-3" style="font-weight: 700;visibility: hidden;">Finding Your Next Pet</h1>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6" style="background-color: transparent;">
-                  <div style="padding-left: 0px; padding-bottom: 55px;text-align:left !important">
-                    <div class="overlapper blackFont">
-                      <h1 class="display-3" style="font-weight: 700;">Other Pets and Accessories</h1>
-                      <p>Although the majority of the app has posts about dogs and cats, users can upload and look for
-                        any other type of pet we have listed. <br>
-                        <br> You can also find toys, accessories, and services for your pet as well. <br>
-                        <br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
+    <script src="https://dimon-gatsby.vercel.app//polyfill-7fe1a63fac9cbf887ef9.js" nomodule=""></script>
+    <script src="https://dimon-gatsby.vercel.app//component---src-pages-index-js-9898a8561c53a92d864b.js"
+        async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//af4000f3fe1cfbe71df4b32de1ebbaf80ef1d2a0-47ef5a95bd756194dc4f.js"
+        async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//commons-90175aba5889b7702b5a.js" async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//a4c92b5b-951728d3b3890226387e.js" async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//js/sty2.js" async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//app-90efa99b8a5d13c88f6b.js" async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//framework-11348fb0fa7c3ad87864.js" async=""></script>
+    <script src="https://dimon-gatsby.vercel.app//webpack-runtime-33acd6b0dc8fba99c27d.js" async=""></script>
+    <script>
+        const video = document.querySelector("video");
+        video.playbackRate = 1.2;
+    </script>
 
-  <section style="height: 100vh; background: #fafafa;">
-    <div class="container h-100">
-      <div class="d-flex h-100 align-items-center">
-        <div class="w-100 text-white" style="padding-bottom: 55px;">
-          <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-              <iframe width="100%" height="480" src="https://www.youtube.com/embed/EU4nEQaIgao"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                    gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-  </section>
-
-  <section class="footerGradient"></section>
-
-
-
-  <section class="footerClass container">
-    <center>
-      <img class="footerLogo" src="assets/images/barkly-logo.png">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="buttons">
-            <a class="btn-grad btn-grad2" href="https://apps.apple.com/ca/app/barkly/id1593754307" target="_blank"> iOS
-              <span class="icon-position">
-                <i class="fab fa-apple"></i>
-              </span>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.getbarkly" target="_blank"
-              class="btn-grad btn-grad"> Android <span class="icon-position2">
-                <i class="fab fa-google-play"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <a class="footerLink" href="mailto: support@getbarkly.com"> Contact </a> &nbsp; &nbsp;
-      <a class="footerLink" target="_blank"
-        href="https://www.privacypolicies.com/live/adef7c72-77a3-4d89-beb1-890e4200a549"> Privacy Policy </a>
-
-
-
-
-      <p class="footertext"> videos from pexels <br> images from unsplash </p>
-    </center>
-  </section>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
-    integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
-    crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/smooth.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/parallax.js"></script>
-  <script src="assets/js/par2.js"></script>
-  <script>
-    const video = document.querySelector("video");
-    video.playbackRate = 1.2;
-  </script>
-
-  <script async src="//static.getclicky.com/101366420.js"></script>
-
-
-</body>
-
-</html>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+         // ]]>
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $("[rel='tooltip']").tooltip();
+        });
+    </script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://preview.colorlib.com/theme/bac/accordion-13/js/bootstrap.min.js"></script>
+    <script src="https://preview.colorlib.com/theme/bac/accordion-13/js/main.js"></script>
 </body>
 
 </html>
