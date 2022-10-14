@@ -35,7 +35,7 @@
 }
 
 .store-buttons:hover {
-  background: #ffffff;
+  background: #f55b9a;
   color: black;
   transition: 0.5s;
 }
@@ -45,10 +45,10 @@
   background-color: white;
 }
 
-.button-ios:hover {
+/* .button-ios:hover {
   background-color: black;
   color: white;
-}
+} */
 
 .download-right-box {
   position: fixed;
