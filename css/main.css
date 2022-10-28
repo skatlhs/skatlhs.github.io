@@ -166,8 +166,14 @@
     visibility: visible;
   }
 
-  @media (min-width: 320px) and (max-width: 468px) {
+  @media (min-width: 320px) and (max-width: 608px) {
     .banner-one__moc {
       display: none !important;
+    }
+
+    .store-buttons {
+      display: block;
+      width: 100% !important;
+      margin-top: -10px;
     }
   }
