@@ -165,3 +165,9 @@
   .tooltipee:hover .tooltiptext {
     visibility: visible;
   }
+
+  @media (min-width: 320px) and (max-width: 468px) {
+    .banner-one__moc {
+      display: none !important;
+    }
+  }
